@@ -1,0 +1,16 @@
+# Never commit credentials or tokens
+*.json
+!package.json
+.env
+.env.*
+token.json
+token*.json
+client_secret*.json
+*credentials*.json
+service_account*.json
+
+# macOS
+.DS_Store
+
+# Crawl output
+/tmp/
