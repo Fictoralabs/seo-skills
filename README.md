@@ -28,7 +28,7 @@ All tools are optional — skills degrade gracefully when a tool is unavailable.
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/seo-skills.git
+git clone https://github.com/Fictoralabs/seo-skills.git
 bash seo-skills/install.sh
 ```
 
