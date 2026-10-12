@@ -26,7 +26,7 @@ This skill produces FINDINGS only.
 Before starting, confirm available tools:
 
 ```bash
-SF_PATH="/Applications/Screaming Frog SEO Spider.app/Contents/MacOS/ScreamingFrogSEOSpider"
+SF_PATH="/Applications/Screaming Frog SEO Spider.app/Contents/MacOS/ScreamingFrogSEOSpiderLauncher"
 [ -f "$SF_PATH" ] && echo "SF: AVAILABLE" || echo "SF: NOT_INSTALLED"
 claude mcp get gsc 2>/dev/null | grep -i status || echo "GSC: NOT_REGISTERED"
 claude mcp get dfs-mcp 2>/dev/null | grep -i status || echo "DATAFORSEO: NOT_REGISTERED"
@@ -45,7 +45,7 @@ TARGET_URL="${1:-https://zena.fictoralabs.ae}"
 OUTPUT_DIR="/tmp/sf-audit-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$OUTPUT_DIR"
 
-"/Applications/Screaming Frog SEO Spider.app/Contents/MacOS/ScreamingFrogSEOSpider" \
+"/Applications/Screaming Frog SEO Spider.app/Contents/MacOS/ScreamingFrogSEOSpiderLauncher" \
   --headless \
   --crawl "$TARGET_URL" \
   --output-folder "$OUTPUT_DIR" \
